@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -115,7 +116,7 @@ li {
 }
 
 h2 {
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -134,4 +135,32 @@ button {
 button:hover {
   color: black;
   background-color: white;
+}
+
+.img-container {
+  float: left;
+}
+
+.price-detail {
+  float: left;
+  width: 270px;
+  margin: 0 10px;
+}
+
+.price {
+  float: left;
+}
+
+.shipping {
+  float: right;
+  margin-top: 10px;
+}
+
+.pro-info {
+  clear: both;
+}
+
+.details {
+  width: 270px;
+  float: right;
 }
