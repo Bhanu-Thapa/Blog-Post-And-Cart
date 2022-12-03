@@ -53,7 +53,6 @@ p {
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
-  margin-bottom: 20px;
 }
 
 .pro-info {
@@ -72,11 +71,16 @@ a:active {
   text-decoration: none;
 }
 
+.mbox {
+  display: flex;
+  gap: 10px;
+}
+
 .box {
   width: 25px;
   height: 25px;
-  display: inline-block;
-  margin-right: 10px;
+  /* display: inline-block;
+  margin-right: 10px; */
 }
 
 .box1 {
@@ -137,19 +141,19 @@ button:hover {
   background-color: white;
 }
 
-/* ///////////////////////////////// */
+/* ///////////// F L O A T /////////////////// */
 /* for good practice */
 /* .con {
   background-color: red;
 } */
-
+/* 
 .clearfix::after {
   content: '';
   display: block;
   clear: both;
-}
+} */
 /* //////////// */
-
+/* 
 .img-container {
   float: left;
   height: 250px;
@@ -178,5 +182,29 @@ button:hover {
 .details {
   width: 243px;
   float: right;
+  margin-top: 20px;
+} */
+
+/* /////////////// F L E X  B O X ///////////////// */
+
+.main-container {
+  display: flex;
+  gap: 40px;
+}
+
+.price-tag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.price-detail {
+  flex: 1; /* same value so we get exact size in flex 1  */
+  margin-top: 20px;
+}
+
+.details {
+  flex: 1; /* same value so we get exact size in flex 1  */
   margin-top: 20px;
 }
